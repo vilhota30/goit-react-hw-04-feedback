@@ -8,53 +8,33 @@ import PropTypes from "prop-types";
 //     MdPercent,
 // } from "react-icons/md";
 import { StatisticList, DescrStatistics } from "./Statistics.styled";
-import { Notification } from "components/Notification/Notification";
 
 export const Statistics = ({
     good,
     neutral,
     bad,
-    total = 0,
-    positivePercentage = 0,
+    total,
+    positivePercentage,
 }) => {
     return  (
         <StatisticList>
             <li>
-                <DescrStatistics>
-                    {/* <HiOutlineHeart size="14"/> */}
-                Good: <span>{good}</span>
-                </DescrStatistics>
+                <DescrStatistics>Good: {good}</DescrStatistics>
             </li>
             <li>
-                <DescrStatistics>
-                    {/* <MdSentimentNeutral size="14"/> */}
-                Neutral: <span>{neutral}</span>
-                </DescrStatistics>
+                <DescrStatistics>Neutral: {neutral}</DescrStatistics>
             </li>
             <li>
-                <DescrStatistics>
-                    {/* <MdThumbDownOffAlt size="14"/> */}
-                Bad: <span>{bad}</span>
-                </DescrStatistics>
+                <DescrStatistics>Bad: {bad}</DescrStatistics>
             </li>
             <li>
-                <DescrStatistics>
-                    {/* <MdOutlineSummarise size="14"/> */}
-                Total: <span>{total}</span>
-                </DescrStatistics>
+                <DescrStatistics>Total: {total}</DescrStatistics>
             </li>
             <li>
-                <DescrStatistics>
-                    {/* <MdPercent size="14"/> */}
-                    Positive feedback: <span>{positivePercentage}%</span>
-                </DescrStatistics>
+                <DescrStatistics>Positive feedback: {positivePercentage}%</DescrStatistics>
             </li>
-
         </StatisticList>
-     )
-    //  : (
-    //     <Notification msg="There is no feedback"/>
-    // );
+      )  
 };
 
 Statistics.propTypes = {
@@ -63,4 +43,4 @@ Statistics.propTypes = {
     bad: PropTypes.number,
     total: PropTypes.number,
     positivePercentage: PropTypes.number,
-}
+};

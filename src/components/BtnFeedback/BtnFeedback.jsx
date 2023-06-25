@@ -2,7 +2,6 @@ import React from "react";
 import {StyledButton} from "./BtnFeedback.styled";
 import PropTypes from "prop-types";
 export const BtnFeedback = ({
-    // icon: Icon = null,
     type = "button",
     children,
     onClick,
