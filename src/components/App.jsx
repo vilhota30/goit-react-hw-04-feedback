@@ -48,13 +48,13 @@ render () {
       {!this.countTotalFeedback()
             ? (<Notification msg ='There is no feedback!' />)
             : (
-            <Statistics>
-              good={good}
-              neutral={neutral}
-              bad={bad}
-              total={this.countTotalFeedback()}
-              positivePercentage={this.countPositiveFeedbackPercentage()}
-            </Statistics>
+            <Statistics 
+            good={good}
+            neutral={neutral}
+            bad={bad}
+            total={this.countTotalFeedback()}
+            positivePercentage={this.countPositiveFeedbackPercentage()}
+            ></Statistics>
            )}
       </Section>
     </Layout>
