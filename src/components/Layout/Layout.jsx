@@ -1,4 +1,4 @@
-import Reacr from "react";
+import React from "react";
 import {Container} from "./Layout.styled";
 import PropTypes from "prop-types";
 
