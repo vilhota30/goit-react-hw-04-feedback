@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const SectionWrapper = styled.section`
 display: flex;
-flex-directin: column;
+flex-direction: column;
 align-items: center;
 list-style: none;
+background-color: deepskyblue;
 `;
