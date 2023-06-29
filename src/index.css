@@ -7,9 +7,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: blue;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+svg {
+  margin-right: 8px;
+  fill: darkviolet;
+  background-color: whitesmoke;
+  border: 4px solid whitesmoke;
+  outline: none;
 }

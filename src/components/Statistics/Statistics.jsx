@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import {HiOutlineHeart} from "./react-icons/hi";
-// import {
-//     MdThumbDownOffAlt,
-//     MdSentimentNeutral,
-//     MdOutlineSummarise,
-//     MdPercent,
-// } from "react-icons/md";
+ import {
+     MdSentimentVerySatisfied,
+     MdThumbDownOffAlt,
+     MdSentimentNeutral,
+     MdSupport,
+    //  MdOutlineSummarise,
+     MdPercent,
+ } from "react-icons/md";
 import { StatisticList, DescrStatistics } from "./Statistics.styled";
 
 export const Statistics = ({
@@ -19,28 +20,38 @@ export const Statistics = ({
     return  (
         <StatisticList>
             <li>
-                <DescrStatistics>Good: {good}</DescrStatistics>
+                <DescrStatistics>
+                 <MdSentimentVerySatisfied size="14" /> 
+                    Good: {good}</DescrStatistics>
             </li>
             <li>
-                <DescrStatistics>Neutral: {neutral}</DescrStatistics>
+                <DescrStatistics>
+                <MdSentimentNeutral size="14" />
+                    Neutral: {neutral}</DescrStatistics>
             </li>
             <li>
-                <DescrStatistics>Bad: {bad}</DescrStatistics>
+                <DescrStatistics>
+                <MdThumbDownOffAlt size="14" />
+                    Bad: {bad}</DescrStatistics>
             </li>
             <li>
-                <DescrStatistics>Total: {total}</DescrStatistics>
+                <DescrStatistics>
+                  <MdSupport size="14" />
+                    Total: {total}</DescrStatistics>
             </li>
             <li>
-                <DescrStatistics>Positive feedback: {positivePercentage}%</DescrStatistics>
+                <DescrStatistics>
+                <MdPercent size="14" /> 
+                Positive feedback: {positivePercentage}%</DescrStatistics>
             </li>
         </StatisticList>
       )  
 };
 
 Statistics.propTypes = {
-    good: PropTypes.number,
-    neutral: PropTypes.number,
-    bad: PropTypes.number,
-    total: PropTypes.number,
-    positivePercentage: PropTypes.number,
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positivePercentage: PropTypes.number.isRequired,
 };
