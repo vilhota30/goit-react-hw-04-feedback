@@ -21,27 +21,27 @@ export const Statistics = ({
         <StatisticList>
             <li>
                 <DescrStatistics>
-                 <MdSentimentVerySatisfied size="14" /> 
+                 <MdSentimentVerySatisfied size="18" /> 
                     Good: {good}</DescrStatistics>
             </li>
             <li>
                 <DescrStatistics>
-                <MdSentimentNeutral size="14" />
+                <MdSentimentNeutral size="18" />
                     Neutral: {neutral}</DescrStatistics>
             </li>
             <li>
                 <DescrStatistics>
-                <MdThumbDownOffAlt size="14" />
+                <MdThumbDownOffAlt size="18" />
                     Bad: {bad}</DescrStatistics>
             </li>
             <li>
                 <DescrStatistics>
-                  <MdSupport size="14" />
+                  <MdSupport size="18" />
                     Total: {total}</DescrStatistics>
             </li>
             <li>
                 <DescrStatistics>
-                <MdPercent size="14" /> 
+                <MdPercent size="18" /> 
                 Positive feedback: {positivePercentage}%</DescrStatistics>
             </li>
         </StatisticList>

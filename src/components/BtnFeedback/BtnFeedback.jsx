@@ -1,7 +1,6 @@
 import React from "react";
 import {StyledButton} from "./BtnFeedback.styled";
 import PropTypes from "prop-types";
-import { type } from "@testing-library/user-event/dist/type";
 export const BtnFeedback = ({
     icon: Icon = null,
     children,
