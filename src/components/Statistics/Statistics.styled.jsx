@@ -17,4 +17,8 @@ color: royalblue;
 font-weight: bolder;
 background-color: skyblue;
 border-radius: 4px;
-`;
+&&:hover,
+&&focus{
+color: mediumblue;
+background-color: royalblue;
+}`;

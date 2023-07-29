@@ -4,8 +4,8 @@ export const StyledButton = styled.button`
 display: inline-flex;
 align-items: center;
 cursor: pointer;
-width: 100px;
-height: 25px;
+width: 200px;
+height: 30px;
 paddind: 8px;
 margin-bottom: 5px;
 color: blue;
@@ -18,5 +18,6 @@ font-weight: bold;
 &&:focus {
     color: white;
     border-color: white;
+    background-color: blue;
 }
 `
